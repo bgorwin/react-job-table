@@ -2,7 +2,7 @@
 	"name": "react-job-table",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://github.com/bgorwin/react-job-table",
+	"homepage": "https://bgorwin.github.io/react-job-table",
 	"dependencies": {
 		"-": "0.0.1",
 		"@testing-library/jest-dom": "^4.2.4",
