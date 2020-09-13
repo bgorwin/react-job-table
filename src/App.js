@@ -1,6 +1,8 @@
 import React from 'react';
-import Table from './Table';
-import Form from './Form';
+import { Divider } from 'semantic-ui-react';
+
+import Table from './Tables';
+import Forms from './Forms';
 
 class App extends React.Component {
 	state = {
@@ -24,12 +26,13 @@ class App extends React.Component {
 	render() {
 		const { characters } = this.state;
 		return (
-			<div className='container'>
+			<div>
 				<Table
 					characterData={characters}
 					removeCharacter={this.removeCharacter}
 				/>
-				<Form handleSubmit={this.handleSubmit} />
+				<Divider />
+				<Forms handleSubmit={this.handleSubmit} />
 			</div>
 		);
 	}
