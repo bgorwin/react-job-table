@@ -3,6 +3,7 @@ import { Divider } from 'semantic-ui-react';
 
 import Table from './Tables';
 import Forms from './Forms';
+import HeroHeader from './HeroHeader';
 
 class App extends React.Component {
 	state = {
@@ -27,6 +28,7 @@ class App extends React.Component {
 		const { characters } = this.state;
 		return (
 			<div>
+				<HeroHeader />
 				<Table
 					characterData={characters}
 					removeCharacter={this.removeCharacter}
